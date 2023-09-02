@@ -1,0 +1,229 @@
+html,
+header {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #e79e4b;
+  background-image: url("https://static-cse.canva.com/_next/static/assets/wave_w2881xh801_a775fc2518c0a6ca438299351b5d48a3faf59e7348ac4a6f5f88b3b68fd5a06a.png");
+}
+
+/* CSS for small screens (md and lg) */
+@media (max-width: 600px) {
+  .reduce {
+    max-width: 300px; /* Maintain width restriction for larger screens */
+  }
+  html,
+  body {
+    /* height: 100%; */
+    /* margin: 0; */
+    /* padding: 0; */
+    background-color: #e79e4b;
+    background-image: url("https://static-cse.canva.com/_next/static/assets/wave_w2881xh801_a775fc2518c0a6ca438299351b5d48a3faf59e7348ac4a6f5f88b3b68fd5a06a.png");
+    /* margin-left: 40px; */
+  }
+
+  .img-margin{
+    margin-left: 60px;
+    max-width: 200px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.img {
+  border-radius: 10px;
+  height: 50%;
+  justify-content: flex-end;
+  right: 1%;
+}
+
+.text {
+  font-size: 3rem;
+  word-wrap: none;
+}
+
+.bullet-list {
+  list-style-type: disc; /* Use 'disc' for filled bullets, 'circle' for empty bullets, or 'square' for square bullets */
+  margin-left: 30px; /* Adjust the left margin for indentation */
+  padding-left: 10px; /* Add padding to align text with bullets */
+}
+
+.bullet-list li {
+  margin-bottom: 10px; /* Adjust the spacing between bullet point items */
+}
+
+.margin-buttom {
+  margin-bottom: 150px;
+}
+
+.bg::before {
+  text-transform: rotate(180deg);
+  background-color: #f9f5f0;
+  background-image: url("https://static-cse.canva.com/_next/static/assets/wave_w2881xh801_a775fc2518c0a6ca438299351b5d48a3faf59e7348ac4a6f5f88b3b68fd5a06a.png");
+}
+
+/* CSS for smaller screens (sm) */
+/* CSS for larger screens (md and lg) */
+@media (min-width: 640px) {
+  .reduce {
+    max-width: 350px;
+    /* Maintain width restriction for larger screens */
+  }
+  .screen {
+    padding-left: 3px;
+  }
+}
+
+/* carousel */
+/* SLIDER */
+.slider {
+  max-width: 100rem;
+  height: 50rem;
+  margin: 0 auto;
+  position: relative;
+
+  /* IN THE END */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+
+.slide > img {
+  /* Only for images that have different size than slide */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  color: #333;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+}
+
+.slider__btn--left {
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 6%;
+  transform: translate(50%, -50%);
+}
+
+.dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dots__dot {
+  border: none;
+  background-color: #b9b9b9;
+  opacity: 0.7;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  /* Only necessary when overlying images */
+  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+}
+
+.dots__dot:last-child {
+  margin: 0;
+}
+
+.dots__dot--active {
+  /* background-color: #fff; */
+  background-color: #888;
+  opacity: 1;
+}
+
+/* TESTIMONIALS */
+.testimonial {
+  width: 65%;
+  position: relative;
+}
+
+.testimonial::before {
+  content: "\201C";
+  position: absolute;
+  top: -5.7rem;
+  left: -6.8rem;
+  line-height: 1;
+  font-size: 20rem;
+  font-family: inherit;
+  color: var(--color-primary);
+  z-index: -1;
+}
+
+.testimonial__header {
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial__text {
+  font-size: 1rem;
+  margin-bottom: 3.5rem;
+  color: #666;
+}
+
+.testimonial__author {
+  margin-left: 1rem;
+  font-style: normal;
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  column-gap: 2rem;
+}
+
+.testimonial__photo {
+  grid-row: 1 / span 2;
+  width: 5.5rem;
+  border-radius: 50%;
+}
+
+.testimonial__name {
+  font-size: 1rem;
+  font-weight: 500;
+  align-self: end;
+  margin: 0;
+}
+
+.testimonial__location {
+  font-size: 0.8rem;
+}
+
+.section__title--testimonials {
+  margin-bottom: 4rem;
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KiboNavigator</title>
+    <link rel="icon" type="image/x-icon" href="assets/kibo.jpeg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="bg-violet-900">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div
+              class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+            >
+              <div class="flex flex-shrink-0 items-center">
+                <img class="h-8 w-auto" src="assets/kibo.jpeg" alt="Kibo" />
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-violet-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a
+                    href="#"
+                    class="bg-violet-700 text-white rounded-md px-3 py-2 text-sm font-medium"
+                    aria-current="page"
+                    >KiboNavigator</a
+                  >
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:bg-violet-500 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >Community</a
+                  >
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:bg-violet-500 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >Fees Payment</a
+                  >
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:bg-violet-500 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >About</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+            >
+              <button
+                type="button"
+                class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+              >
+                <span class="absolute -inset-1.5"></span>
+                <span class="sr-only">View notifications</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+                  />
+                </svg>
+              </button>
+
+              <!-- Profile dropdown -->
+              <div class="relative ml-3">
+                <div>
+                  <button
+                    type="button"
+                    class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                    id="user-menu-button"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                  >
+                    <span class="absolute -inset-1.5"></span>
+                    <span class="sr-only">Open user menu</span>
+                    <img
+                      class="h-8 w-8 rounded-full"
+                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="pt-20 ">
+      <section class="margin-buttom">
+        <div class="flex flex-wrap -mx-4 ">
+          <!-- First Column (Welcome) -->
+          <div class="h-auto max-w-[700px] intro">
+            <div class="text pl-8 ">Welcome to KiboNavigator</div>
+            <p class="pl-10 pr-10">
+              Welcome to "Your Guide to Success at Kibo University." We are your
+              trusted companion on this exciting educational journey that lies
+              ahead of you. Our mission is simple yet profound: to lead you
+              through the intricate pathways of learning, personal growth, and
+              community engagement. Whether you're a newcomer seeking
+              information, an adventurous spirit eager to explore new horizons,
+              or a dedicated learner committed to academic excellence, our
+              platform is here to support you every step of the way. Dive into
+              our resources, connect with fellow students, and embrace the
+              transformative experiences that Kibo University has in store for
+              you. Join us on this educational voyage, and together, we'll
+              navigate your path to success.
+            </p>
+            <button
+              type="submit"
+              class="m-10 md:mt-8 p-3 px-5 bg-violet-700 text-white font-bold text-sm hover:bg-purple-800"
+            >
+              Purple to Blue
+            </button>
+          </div>
+
+          <!-- Second Column (Image 1) -->
+          <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 screen">
+            <div>
+              <img
+                class="h-auto max-w-full md:max-w-[320px] img-margin rounded-lg reduce"
+                src="https://i.pinimg.com/474x/02/70/c4/0270c4f08e38f10ddbc70928b8c58ea1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <!-- Third Column (Image 2) -->
+          <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 screen">
+            <div>
+              <img
+                class="h-auto max-w-full md:max-w-[350px] img-margin rounded-lg"
+                src="https://i.pinimg.com/474x/65/6b/22/656b222764aab8e212c33bfe40ab38bd.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Second -->
+
+      <section class="mx-auto p-10 md:py-20 px-0 md:p-10 md:px-0">
+        <section
+          class="relative px-10 md:p-0 transform duration-500 hover:shadow-2xl cursor-pointer hover:-translate-y-1"
+        >
+          <img
+            class="w-full"
+            src="https://images.pexels.com/photos/5990153/pexels-photo-5990153.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1860"
+            alt=""
+          />
+          <div
+            class="content bg-white p-2 pt-8 md:p-12 pb-12 lg:max-w-lg w-full lg:absolute top-48 right-5"
+          >
+            <div class="flex justify-between font-bold text-sm">
+              <p>Your Journey Starts Here</p>
+              <p class="text-gray-400"></p>
+            </div>
+            <h2 class="text-3xl font-semibold mt-4 md:mt-10">
+              Explore, Connect, Succeed
+            </h2>
+
+            <ul class="bullet-list">
+              <li>
+                <p class="pl-7 pr-10">
+                  Explore: Dive into our handpicked and tailored set of tools,
+                  resources, and insights crafted to match your unique needs.
+                  Master the Kibo learning environment with ease, with resources
+                  customized just for you.
+                </p>
+              </li>
+              <li>
+                <p class="pl-7 pr-10">
+                  Connect: Join a vibrant student community where collaboration
+                  and support drive success. Share experiences, ideas, and
+                  opportunities with fellow learners. Explore clubs,
+                  organizations, and events tailored to your intere
+                </p>
+              </li>
+              <li>
+                <p class="pl-7 pr-10">
+                  Succeed: Embrace the transformative experience that Kibo
+                  University offers, and unlock your potential for academic
+                  excellence. Your success is our priority, and we're here to
+                  guide you every step of the way.
+                </p>
+              </li>
+            </ul>
+
+            <button
+              type="submit"
+              class="mt-2 md:mt-5 p-3 px-5 bg-violet-700 text-white font-bold text-sm hover:bg-purple-800"
+            >
+              Read More
+            </button>
+          </div>
+        </section>
+      </section>
+
+      <section class="section bg" id="section--3">
+        <!-- <div class="section__title section__title--testimonials">
+          <h2 class="section__description">Not sure yet?</h2>
+          <h3 class="section__header">
+            Millions of Bankists are already making their lifes simpler.
+          </h3>
+        </div> -->
+
+        <div class="slider">
+          <div class="slide">
+            <div class="testimonial">
+              <h5 class="testimonial__header">Best financial decision ever!</h5>
+              <blockquote class="testimonial__text">
+                Kibo has really changed how I look at most things. Initially I
+                had this fear of the future, what if it doesn’t work out, but
+                with the very short time that I have been with Kibo that fear is
+                no more and I am very positive about the future now
+              </blockquote>
+              <address class="testimonial__author">
+                <img
+                  src="https://media.licdn.com/dms/image/D5603AQEJn8FyhICBvg/profile-displayphoto-shrink_800_800/0/1677872228524?e=1698883200&v=beta&t=kamup6U7wZ9Nem07MFPOP98ko3KXEp9aWDbwovdx-Ik"
+                  alt=""
+                  class="testimonial__photo"
+                />
+                <h6 class="testimonial__name">Jimmy</h6>
+                <p class="testimonial__location">Accra, Ghana</p>
+              </address>
+            </div>
+          </div>
+          <!-- 
+          <div class="slide">
+            <div class="testimonial">
+              <h5 class="testimonial__header">
+                The last step to becoming a complete minimalist
+              </h5>
+              <blockquote class="testimonial__text">
+                Quisquam itaque deserunt ullam, quia ea repellendus provident,
+                ducimus neque ipsam modi voluptatibus doloremque, corrupti
+                laborum. Incidunt numquam perferendis veritatis neque
+                repellendus. Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Illo deserunt exercitationem deleniti.
+              </blockquote>
+              <address class="testimonial__author">
+                <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+                <h6 class="testimonial__name">Miyah Miles</h6>
+                <p class="testimonial__location">London, UK</p>
+              </address>
+            </div>
+          </div> -->
+
+          <!-- <div class="slide">
+            <div class="testimonial">
+              <h5 class="testimonial__header">
+                Finally free from old-school banks
+              </h5>
+              <blockquote class="testimonial__text">
+                Debitis, nihil sit minus suscipit magni aperiam vel tenetur
+                incidunt commodi architecto numquam omnis nulla autem,
+                necessitatibus blanditiis modi similique quidem. Odio aliquam
+                culpa dicta beatae quod maiores ipsa minus consequatur error
+                sunt, deleniti saepe aliquid quos inventore sequi.
+                Necessitatibus id alias reiciendis, perferendis facere.
+              </blockquote>
+              <address class="testimonial__author">
+                <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+                <h6 class="testimonial__name">Francisco Gomes</h6>
+                <p class="testimonial__location">Lisbon, Portugal</p>
+              </address>
+            </div>
+          </div> -->
+
+          <button class="slider__btn slider__btn--left">&larr;</button>
+          <button class="slider__btn slider__btn--right">&rarr;</button>
+          <div class="dots"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
