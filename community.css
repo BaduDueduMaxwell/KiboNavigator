@@ -1,0 +1,70 @@
+.first-img {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #d6eae6;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("https://kibo.school/wp-content/uploads/2022/06/Community-bg-Mobile.svg");
+  mix-blend-mode: multiply;
+}
+
+.images-overlay {
+  position: relative;
+  top: 25%;
+  padding-top: 20px;
+  z-index: 1;
+  background-color: #01ab9d;
+}
+
+.overlay {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-overlay-parag {
+  padding-top: 20px;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  justify-content: space-between;
+}
+
+.heading-1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  color: rgb(118, 108, 209);
+  font-size: 54px;
+}
+
+.sub-heading-1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 40px;
+  color: rgb(118, 108, 209);
+  font-size: 13px;
+}
+
+/* .third-img {
+  height: 100vh;
+  background-color: ;
+} */
+
+.bg-color{
+  background-color: #6D4537;
+}

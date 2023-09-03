@@ -16,6 +16,59 @@
             <div
               class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
             >
+              <div
+                class="absolute inset-y-0 left-0 flex items-center sm:hidden"
+              >
+                <!-- Mobile menu button-->
+                <button
+                  type="button"
+                  class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                  aria-controls="mobile-menu"
+                  aria-expanded="false"
+                >
+                  <span class="absolute -inset-0.5"></span>
+                  <span class="sr-only">Open main menu</span>
+                  <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                  <svg
+                    class="block h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    />
+                  </svg>
+                  <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                  <svg
+                    class="hidden h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+
               <div class="flex flex-shrink-0 items-center">
                 <img class="h-8 w-auto" src="assets/kibo.jpeg" alt="Kibo" />
               </div>
@@ -23,13 +76,13 @@
                 <div class="flex space-x-4">
                   <!-- Current: "bg-violet-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                   <a
-                    href="#"
+                    href="home.html"
                     class="bg-violet-700 text-white rounded-md px-3 py-2 text-sm font-medium"
                     aria-current="page"
                     >KiboNavigator</a
                   >
                   <a
-                    href="#"
+                    href="community.html"
                     class="text-gray-300 hover:bg-violet-500 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                     >Community</a
                   >
@@ -93,15 +146,47 @@
               </div>
             </div>
           </div>
+
+          <!-- Mobile -->
+          <div class="sm:hidden" id="mobile-menu">
+            <div class="space-y-1 px-2 pb-3 pt-2">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a
+                href="#"
+                class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+                aria-current="page"
+                >KiboNavigator</a
+              >
+              <a
+                href="community.html"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                >Community</a
+              >
+              <a
+                href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                >Fees Payment</a
+              >
+              <a
+                href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                >About</a
+              >
+            </div>
+          </div>
         </div>
       </nav>
     </header>
-    <main class="pt-20">
-      <section class="margin-buttom">
+    <main >
+      <section class="margin-buttom background-img pt-36">
         <div class="flex flex-wrap -mx-4">
           <!-- First Column (Welcome) -->
           <div class="h-auto max-w-[700px] intro">
-            <div class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-black text pl-8">Welcome to KiboNavigator</div>
+            <div
+              class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-black text pl-8"
+            >
+              Welcome to KiboNavigator
+            </div>
             <p class="pl-10 pr-10 testimonial__text text-black">
               Welcome to "Your Guide to Success at Kibo University." We are your
               trusted companion on this exciting educational journey that lies
@@ -207,7 +292,7 @@
         </section>
       </section>
 
-      <section class="section bg" id="section--3">
+      <section class="section background-img" id="section--3">
         <div class="slider">
           <div class="slide">
             <div class="testimonial">
@@ -308,7 +393,7 @@
             </p>
           </div>
 
-          <div class="hidden lg:mt-0 lg:col-span-5 lg:flex rounded-full">
+          <div class="lg:mt-0 lg:col-span-5 lg:flex rounded-full">
             <img
               src="https://i.pinimg.com/474x/9a/07/66/9a07663baddadce837768e2270a7ab4f.jpg"
               alt="hero image"
@@ -318,7 +403,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="background-img">
       <div
         class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
       >

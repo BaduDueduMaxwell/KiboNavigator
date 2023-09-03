@@ -1,6 +1,5 @@
-html,
-header {
-  height: 100%;
+.background-img {
+  height: 80%;
   margin: 0;
   padding: 0;
   background-color: #e79e4b;
@@ -12,15 +11,11 @@ header {
   .reduce {
     max-width: 300px; /* Maintain width restriction for larger screens */
   }
-  html,
+  /* html,
   body {
-    /* height: 100%; */
-    /* margin: 0; */
-    /* padding: 0; */
     background-color: #e79e4b;
     background-image: url("https://static-cse.canva.com/_next/static/assets/wave_w2881xh801_a775fc2518c0a6ca438299351b5d48a3faf59e7348ac4a6f5f88b3b68fd5a06a.png");
-    /* margin-left: 40px; */
-  }
+  } */
 
   .img-margin {
     margin-left: 60px;
