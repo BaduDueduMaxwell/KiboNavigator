@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #f8fafc;
+  height: 100vh;
+  margin-left: 75px;
+}
+
+.child {
+  position: absolute;
+  background-color: #f1f5f9;
+  padding: 20px;
+  border: 1px solid purple;
+  border-radius: 5px;
+  padding: 40px 100px;
+}
+
+input {
+  border: 1px solid;
+}
+
+input[placeholder="Name"],
+[placeholder="Email"],
+[placeholder="Password"] {
+  padding-left: 10px;
+}
+
+button {
+  border: 1px solid;
+}
