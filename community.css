@@ -1,3 +1,5 @@
+/* Desktop Screen */
+
 .first-img {
   position: relative;
   margin: 0;
@@ -60,11 +62,22 @@
   font-size: 13px;
 }
 
-/* .third-img {
-  height: 100vh;
-  background-color: ;
-} */
+.bg-color {
+  background-color: #6d4537;
+}
 
-.bg-color{
-  background-color: #6D4537;
+.bg-color-2 {
+  background-color: #01ab9d;
+}
+
+.padding {
+  padding-left: 30px;
+}
+
+.background-img {
+  height: 80%;
+  margin: 0;
+  padding: 0;
+  background-color: #e79e4b;
+  background-image: url("https://static-cse.canva.com/_next/static/assets/wave_w2881xh801_a775fc2518c0a6ca438299351b5d48a3faf59e7348ac4a6f5f88b3b68fd5a06a.png");
 }
