@@ -30,3 +30,80 @@ input[placeholder="Name"],
 button {
   border: 1px solid;
 }
+
+/* Tablet screen */
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #f8fafc;
+    height: 100vh;
+    margin-left: 75px;
+  }
+
+  .child {
+    position: absolute;
+    background-color: #f8fafc;
+    padding: 20px;
+    border: 1px solid purple;
+    border-radius: 5px;
+    padding: 100px;
+  }
+
+  input {
+    border: 1px solid;
+  }
+
+  input[placeholder="Name"],
+  [placeholder="Email"],
+  [placeholder="Password"],
+  [placeholder="Phone"] {
+    padding-left: 10px;
+  }
+
+  button {
+    border: 1px solid;
+  }
+}
+
+/* Mobile screen smaller than 640px */
+@media (max-width: 640px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #f8fafc;
+    height: 100vh;
+    margin-left: 75px;
+    margin-left: 0;
+  }
+
+  .child {
+    margin-top: 150px; /* remove after adding js*/
+    position: absolute;
+    background-color: #f8fafc;
+    padding: 20px;
+    border: 1px solid purple;
+    border-radius: 5px;
+    padding: 50px;
+  }
+
+  input {
+    border: 1px solid;
+  }
+
+  input[placeholder="Name"],
+  [placeholder="Email"],
+  [placeholder="Password"],
+  [placeholder="Phone"] {
+    padding-left: 10px;
+  }
+
+  button {
+    border: 1px solid;
+  }
+}
