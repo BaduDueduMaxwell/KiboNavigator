@@ -2,8 +2,6 @@
 
 .first-img {
   position: relative;
-  margin: 0;
-  padding: 0;
   background-color: #d6eae6;
   height: 100vh;
   background-size: cover;
@@ -80,4 +78,60 @@
   padding: 0;
   background-color: #e79e4b;
   background-image: url("https://static-cse.canva.com/_next/static/assets/wave_w2881xh801_a775fc2518c0a6ca438299351b5d48a3faf59e7348ac4a6f5f88b3b68fd5a06a.png");
+}
+
+/* Tablet screen*/
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  .sub-heading-1 {
+    top: 45%;
+  }
+
+  .overlay {
+    top: 100%;
+  }
+
+  .images-overlay {
+    position: relative;
+    top: 25%;
+    padding-top: 100px;
+    z-index: 0;
+    background-color: #01ab9d;
+  }
+
+  .text-overlay-parag {
+    padding-top: 10px;
+  }
+
+  .executive-img {
+    width: 90%;
+    padding: 45px;
+  }
+}
+
+@media (max-width: 640px) {
+  main {
+    margin-top: 200px; /*remove after js*/
+  }
+
+  .heading-1 {
+    font-size: 25.2px;
+  }
+
+  .sub-heading-1 {
+    top: 45%;
+  }
+
+  .images-overlay {
+    padding-top: 100px;
+  }
+
+  .text-overlay-parag {
+    font-size: 10px;
+    margin-bottom: 80px;
+  }
+
+  .overlay {
+    top: 90%;
+  }
 }
