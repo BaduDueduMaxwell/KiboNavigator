@@ -1,45 +1,54 @@
 .background-img {
-  height: 80%;
+  width: 100%;
+  height: 80vh;
   margin: 0;
   padding: 0;
   background-color: #e79e4b;
   background-image: url("https://static-cse.canva.com/_next/static/assets/wave_w2881xh801_a775fc2518c0a6ca438299351b5d48a3faf59e7348ac4a6f5f88b3b68fd5a06a.png");
 }
 
-/* CSS for small screens (md and lg) */
-@media (max-width: 600px) {
-  .reduce {
-    max-width: 300px; /* Maintain width restriction for larger screens */
-  }
-  /* html,
-  body {
-    background-color: #e79e4b;
-    background-image: url("https://static-cse.canva.com/_next/static/assets/wave_w2881xh801_a775fc2518c0a6ca438299351b5d48a3faf59e7348ac4a6f5f88b3b68fd5a06a.png");
-  } */
-
-  .img-margin {
-    margin-left: 60px;
-    max-width: 200px;
-  }
-}
-
-.wrapper {
+.container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px; /* change to 100px later*/
+  margin: 0 auto;
 }
 
-.img {
-  border-radius: 10px;
-  height: 50%;
-  justify-content: flex-end;
-  right: 1%;
+.photo {
+  -webkit-mask: url("https://i.ibb.co/mBrmH0k/Mf15d.png") center/contain
+    no-repeat;
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-.text {
-  font-size: 3rem;
-  word-wrap: none;
+#text {
+  text-align: left;
+  padding: 50px;
 }
 
+.margin-buttom {
+  margin-bottom: 300px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .margin-buttom {
+    margin-bottom: 70px;
+  }
+
+  .photo {
+    max-width: 100%;
+  }
+}
+
+/* Bullet Styling*/
 .bullet-list {
   list-style-type: disc; /* Use 'disc' for filled bullets, 'circle' for empty bullets, or 'square' for square bullets */
   margin-left: 30px; /* Adjust the left margin for indentation */
@@ -50,30 +59,7 @@
   margin-bottom: 10px; /* Adjust the spacing between bullet point items */
 }
 
-.margin-buttom {
-  margin-bottom: 150px;
-}
-
-.bg::before {
-  text-transform: rotate(180deg);
-  background-color: #f9f5f0;
-  background-image: url("https://static-cse.canva.com/_next/static/assets/wave_w2881xh801_a775fc2518c0a6ca438299351b5d48a3faf59e7348ac4a6f5f88b3b68fd5a06a.png");
-}
-
-/* CSS for smaller screens (sm) */
-/* CSS for larger screens (md and lg) */
-@media (min-width: 640px) {
-  .reduce {
-    max-width: 350px;
-    /* Maintain width restriction for larger screens */
-  }
-  .screen {
-    padding-left: 3px;
-  }
-}
-
 /* carousel */
-/* SLIDER */
 .slider {
   max-width: 100rem;
   height: 50rem;
